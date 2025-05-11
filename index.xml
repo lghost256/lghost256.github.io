@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>localgh0st&#39;s blog</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on localgh0st&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IPsec VPN Configuration on Cisco IOS</title>
+      <link>http://localhost:1313/posts/ipsec-vpn-configuration-on-cisco-ios/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/ipsec-vpn-configuration-on-cisco-ios/</guid>
+      
+      <description>&lt;p&gt;&lt;em&gt;Note: you must follow these configuration steps on both ends of the tunnel.&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id=&#34;what-is-ipsec&#34;&gt;What is IPsec?&lt;/h1&gt;
+&lt;p&gt;IPsec is a suite of protocols used to create secure tunnels across insecure networks (like the internet). Two routers (also called peers) are used to establish the tunnel.&lt;/p&gt;
+&lt;p&gt;IPsec also provides authentication, ensuring that only authenticated peers can connect.&lt;/p&gt;
+&lt;p&gt;Finally, any traffic carried by IPsec is encrypted to maintain confidentiality.&lt;/p&gt;
+&lt;h2 id=&#34;what-traffic-does-ipsec-transport&#34;&gt;What Traffic Does IPsec Transport?&lt;/h2&gt;
+&lt;p&gt;IPsec can be configured to transport specific types of traffic based on defined rules. Traffic that matches these rules is referred to as &lt;strong&gt;interesting traffic&lt;/strong&gt;. If the traffic matches one of the rules, IPsec will use the tunnel to deliver it.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>NAT Configuration on Cisco IOS</title>
+      <link>http://localhost:1313/posts/nat-configuration-cisco-ios/</link>
+      <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/nat-configuration-cisco-ios/</guid>
+      
+      <description>&lt;h1 id=&#34;dynamic-nat-overload-pat&#34;&gt;Dynamic NAT Overload (PAT)&lt;/h1&gt;
+&lt;h2 id=&#34;what-is-it&#34;&gt;What is it?&lt;/h2&gt;
+&lt;p&gt;NAT Overload, also known as PAT (Port Address Translation) is a type of NAT configuration that allows multiple devices in a network to share a single public IP address. What makes this type of NAT &amp;ldquo;dynamic&amp;rdquo; is the fact that there is no pre-defined one-to-one mapping between a private IP address and a public IP address (that is, the router takes care of the translation based on our instructions).&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/pages/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/about/</guid>
+      
+      <description>&lt;p&gt;Hi, I&amp;rsquo;m Carlos. Welcome to my blog 👋&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m a person who is deeply passionate about technology, and this blog is a reflection of that. Many times, when I&amp;rsquo;m building something in my lab or I manage to solve a problem in an interesting way, I think:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;ldquo;Wouldn&amp;rsquo;t it be great to share this with the world?&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;So, I finally got to work and created this site. Not just to showcase my projects and document things for myself, but also in the hope that someone out there might find it useful.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

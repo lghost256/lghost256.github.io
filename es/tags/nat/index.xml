@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nat on localgh0st&#39;s blog</title>
+    <link>http://localhost:1313/es/tags/nat/</link>
+    <description>Recent content in Nat on localgh0st&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Wed, 02 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/es/tags/nat/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configuración NAT en Cisco IOS</title>
+      <link>http://localhost:1313/es/posts/configuracion-nat-cisco-ios/</link>
+      <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/configuracion-nat-cisco-ios/</guid>
+      
+      <description>&lt;h1 id=&#34;nat-dinámico-con-sobrecarga-pat&#34;&gt;NAT Dinámico con Sobrecarga (PAT)&lt;/h1&gt;
+&lt;h2 id=&#34;qué-es&#34;&gt;¿Qué es?&lt;/h2&gt;
+&lt;p&gt;NAT Overload, también conocido como PAT (Traducción de Direcciones de Puerto), es un tipo de configuración de NAT que permite que varios dispositivos en una red compartan una única dirección IP pública. Lo que hace que este tipo de NAT sea &amp;ldquo;dinámico&amp;rdquo; es el hecho de que no hay una asignación predefinida uno a uno entre una dirección IP privada y una dirección IP pública (es decir, el enrutador se encarga de la traducción según nuestras instrucciones).&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

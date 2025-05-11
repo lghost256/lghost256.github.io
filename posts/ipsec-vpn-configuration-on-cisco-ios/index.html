@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">IPsec VPN Configuration on Cisco IOS | localgh0st&#39;s blog</title>
+<meta property="og:title" content="IPsec VPN Configuration on Cisco IOS | localgh0st&#39;s blog" />
+<meta name="twitter:title" content="IPsec VPN Configuration on Cisco IOS | localgh0st&#39;s blog" />
+<meta itemprop="name" content="IPsec VPN Configuration on Cisco IOS | localgh0st&#39;s blog" />
+<meta name="application-name" content="IPsec VPN Configuration on Cisco IOS | localgh0st&#39;s blog" />
+<meta property="og:site_name" content="local-gh0st&#39;s blog" />
+
+<meta name="description" content="A guide for configuring an IPSec VPN on Cisco IOS">
+<meta itemprop="description" content="A guide for configuring an IPSec VPN on Cisco IOS" />
+<meta property="og:description" content="A guide for configuring an IPSec VPN on Cisco IOS" />
+<meta name="twitter:description" content="A guide for configuring an IPSec VPN on Cisco IOS" />
+
+<meta property="og:locale" content="en" />
+<meta name="language" content="en" />
+
+  <link rel="alternate" hreflang="en" href="http://localhost:1313/posts/ipsec-vpn-configuration-on-cisco-ios/" title="English" />
+
+
+
+
+
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2025-04-10T00:00:00Z />
+    <meta property="article:published_time" content=2025-04-10T00:00:00Z />
+    <meta property="og:url" content="http://localhost:1313/posts/ipsec-vpn-configuration-on-cisco-ios/" />
+
+    
+    <meta property="og:article:author" content="Carlos Angel" />
+    <meta property="article:author" content="Carlos Angel" />
+    <meta name="author" content="Carlos Angel" />
+    
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "IPsec VPN Configuration on Cisco IOS",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2025-04-10",
+        "description": "A guide for configuring an IPSec VPN on Cisco IOS",
+        "wordCount":  708 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2025-04-10",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "localgh0st\u0027s blog"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.147.1">
+
+    
+    <meta property="og:url" content="http://localhost:1313/posts/ipsec-vpn-configuration-on-cisco-ios/">
+  <meta property="og:site_name" content="localgh0st&#39;s blog">
+  <meta property="og:title" content="IPsec VPN Configuration on Cisco IOS">
+  <meta property="og:description" content="A guide for configuring an IPSec VPN on Cisco IOS">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-04-10T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-04-10T00:00:00+00:00">
+    <meta property="article:tag" content="Cisco">
+    <meta property="article:tag" content="Vpn">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="IPsec VPN Configuration on Cisco IOS">
+  <meta name="twitter:description" content="A guide for configuring an IPSec VPN on Cisco IOS">
+
+
+    
+
+    <link rel="canonical" href="http://localhost:1313/posts/ipsec-vpn-configuration-on-cisco-ios/">
+    <link href="/style.min.2d921c18cf1ec555ffc03d59a8adc211c402c68c930c27d6a0c306ab175a8d09.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="http://localhost:1313/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    
+</head>
+<body data-theme = "dark" class="notransition">
+
+<script src="/js/theme.js"></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="http://localhost:1313/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title></title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        Home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link active" href="/posts/">
+                        Posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/pages/about/">
+                        About
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">IPsec VPN Configuration on Cisco IOS</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2025-04-10T00:00:00&#43;00:00" itemprop="datePublished"> Apr 10, 2025 </time>
+                </div>
+                
+            </header>
+            
+    
+    <details class="toc" ZgotmplZ>
+        <summary><b></b></summary>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-traffic-does-ipsec-transport">What Traffic Does IPsec Transport?</a></li>
+    <li><a href="#what-phases-does-ipsec-go-through">What Phases Does IPsec Go Through?</a>
+      <ul>
+        <li><a href="#ike-phase-1">IKE Phase 1</a></li>
+        <li><a href="#ike-phase-2">IKE Phase 2</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#verification-commands">Verification Commands</a></li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-activate-the-securityk9-module">1. Activate the <code>securityk9</code> Module</a></li>
+        <li><a href="#2-configure-default-route-on-both-routers">2. Configure Default Route on Both Routers</a>
+          <ul>
+            <li><a href="#vil">VIL</a></li>
+            <li><a href="#san">SAN</a></li>
+          </ul>
+        </li>
+        <li><a href="#3-configure-extended-access-control-lists-acls">3. Configure Extended Access Control Lists (ACLs)</a>
+          <ul>
+            <li><a href="#vil-1">VIL</a></li>
+            <li><a href="#san-1">SAN</a></li>
+          </ul>
+        </li>
+        <li><a href="#4-configure-isakmp-phase-1">4. Configure ISAKMP (Phase 1)</a>
+          <ul>
+            <li><a href="#vil-2">VIL</a></li>
+            <li><a href="#san-2">SAN</a></li>
+          </ul>
+        </li>
+        <li><a href="#5-configure-psk-pre-shared-key">5. Configure PSK (Pre-shared Key)</a>
+          <ul>
+            <li><a href="#vil-3">VIL</a></li>
+            <li><a href="#san-3">SAN</a></li>
+          </ul>
+        </li>
+        <li><a href="#6-define-transform-set">6. Define <code>transform-set</code></a>
+          <ul>
+            <li><a href="#vil--san">VIL &amp; SAN</a></li>
+          </ul>
+        </li>
+        <li><a href="#7-configure-crypto-map">7. Configure <code>crypto map</code></a>
+          <ul>
+            <li><a href="#vil-4">VIL</a></li>
+            <li><a href="#san-4">SAN</a></li>
+          </ul>
+        </li>
+        <li><a href="#8-apply-crypto-map-to-the-interfaces">8. Apply <code>crypto map</code> to the Interfaces</a>
+          <ul>
+            <li><a href="#vil-5">VIL</a></li>
+            <li><a href="#san-5">SAN</a></li>
+          </ul>
+        </li>
+        <li><a href="#9-verifying-functionality">9. Verifying functionality</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </details>
+            <div class="page-content">
+                <p><em>Note: you must follow these configuration steps on both ends of the tunnel.</em></p>
+<h1 id="what-is-ipsec">What is IPsec?</h1>
+<p>IPsec is a suite of protocols used to create secure tunnels across insecure networks (like the internet). Two routers (also called peers) are used to establish the tunnel.</p>
+<p>IPsec also provides authentication, ensuring that only authenticated peers can connect.</p>
+<p>Finally, any traffic carried by IPsec is encrypted to maintain confidentiality.</p>
+<h2 id="what-traffic-does-ipsec-transport">What Traffic Does IPsec Transport?</h2>
+<p>IPsec can be configured to transport specific types of traffic based on defined rules. Traffic that matches these rules is referred to as <strong>interesting traffic</strong>. If the traffic matches one of the rules, IPsec will use the tunnel to deliver it.</p>
+<h2 id="what-phases-does-ipsec-go-through">What Phases Does IPsec Go Through?</h2>
+<h3 id="ike-phase-1">IKE Phase 1</h3>
+<p>This phase is focused on exchanging keys. The goals of Phase 1 are to:</p>
+<ul>
+<li><strong>Authenticate</strong> peers using a pre-shared key (PSK) or a certificate.</li>
+<li>Use <strong>asymmetric encryption</strong> to securely share a <strong>symmetric key</strong>, which will be used in Phase 2.</li>
+<li>At the end of this phase, an <strong>IKE Phase 1 tunnel</strong> (also called a <strong>Security Association</strong>, or SA) is established.</li>
+</ul>
+<h3 id="ike-phase-2">IKE Phase 2</h3>
+<ul>
+<li>Uses the keys established in Phase 1.</li>
+<li>Agrees on encryption methods and keys for bulk data transfer.</li>
+<li>At the end of this phase, an <strong>IPSec SA</strong> is established, securing data traffic.</li>
+</ul>
+<h1 id="configuration-steps">Configuration steps</h1>
+<p>1.- Use an ACL to identify VPN traffic:</p>
+<pre tabindex="0"><code>! name: a name for the ACL.
+Router(config)#ip access-list extended &lt;name&gt;
+! source: the network where the VPN traffic originates from.
+! destination: the network where VPN traffic is destined to.
+Router(config-ext-nacl)#permit ip &lt;source&gt; &lt;source-wildcard&gt; &lt;destination&gt; &lt;destination-wildcard&gt; 
+</code></pre><p>2.- Configure ISAKMP policy (phase 1):</p>
+<pre tabindex="0"><code>! priority: priority of protection suite (1-10000). Determines the priority of different IKE policies, ensuring the best policy is selected.
+Router(config)#crypto isakmp policy &lt;priority&gt;
+Router(config-isakmp)#encryption {3des | aes | des}
+Router(config-isakmp)#authentication pre-share
+! group: define the cryptographic strength used during the key exchange process.
+! The size of the modulus used directly impacts the security of the key exchange.
+Router(config-isakmp)#group {1 | 2 | 5}
+</code></pre><p>3.- Configure ISAKMP key:</p>
+<pre tabindex="0"><code>Router(config)#crypto isakmp key &lt;secret-key&gt; address &lt;peer-address&gt;
+</code></pre><p>4.- IPSec transform-set (phase 2):</p>
+<pre tabindex="0"><code>! name: the name of the transform-set.
+Router(config)#crypto ipsec transform-set &lt;name&gt; esp-aes 256 esp-sha-hmac
+</code></pre><p>5.- Set up crypto map:</p>
+<pre tabindex="0"><code>Router(config)#crypto map &lt;tag&gt; &lt;sequence-#&gt; ipsec-isakmp
+Router(config-crypto-map)#set peer &lt;peer-address&gt;
+! pfs: enhances security because it prevents attackers from decrypting past traffic even if they obtain the key used for the current session.
+Router(config-crypto-map)#set pfs {group1 | group2 | group5}
+Router(config-crypto-map)#set transform-set &lt;transform-set-name&gt;
+Router(config-crypto-map)#match address &lt;acl-name&gt;
+</code></pre><p>6.-  Apply the crypto map:</p>
+<pre tabindex="0"><code>Router(config)#interface &lt;type&gt; &lt;number&gt;
+Router(config-if)#crypto map &lt;tag&gt;
+</code></pre><h2 id="verification-commands">Verification Commands</h2>
+<pre tabindex="0"><code>Router#show crypto isakmp sa
+Router#show crypto ipsec sa
+</code></pre><h1 id="sample-configuration-packet-tracer">Sample Configuration (Packet Tracer)</h1>
+<ul>
+<li><strong>Goal</strong>: configure an IPsec Tunnel Between VIL and SAN. The network topology we will use is the following:</li>
+</ul>
+<p><img src="/posts/topo-20250410.png" alt="topo-20250410.png"></p>
+<h3 id="1-activate-the-securityk9-module">1. Activate the <code>securityk9</code> Module</h3>
+<p>This enables IPsec VPN functionalities on the PT routers (I am using a 2911):</p>
+<pre tabindex="0"><code>license boot module c2900 technology-package securityk9
+</code></pre><p>(Note: when configuring this in PT 8.2.2, I had to execute the above command twice before I got the prompt to accept a license agreement to activate the <code>securityk9</code> module. I&rsquo;m assuming that this is a bug).</p>
+<h3 id="2-configure-default-route-on-both-routers">2. Configure Default Route on Both Routers</h3>
+<h4 id="vil">VIL</h4>
+<pre tabindex="0"><code>ip route 0.0.0.0 0.0.0.0 20.0.0.2
+</code></pre><h4 id="san">SAN</h4>
+<pre tabindex="0"><code>ip route 0.0.0.0 0.0.0.0 20.0.0.5
+</code></pre><h3 id="3-configure-extended-access-control-lists-acls">3. Configure Extended Access Control Lists (ACLs)</h3>
+<h4 id="vil-1">VIL</h4>
+<pre tabindex="0"><code>ip access-list extended VPN_ACL
+permit ip 192.168.1.0 0.0.0.255 20.0.2.0 0.0.0.255
+</code></pre><h4 id="san-1">SAN</h4>
+<pre tabindex="0"><code>ip access-list extended VPN_ACL
+permit ip 20.0.2.0 0.0.0.255 192.168.1.0 0.0.0.255
+</code></pre><h3 id="4-configure-isakmp-phase-1">4. Configure ISAKMP (Phase 1)</h3>
+<h4 id="vil-2">VIL</h4>
+<pre tabindex="0"><code>crypto isakmp policy 10
+encryption aes 256
+authentication pre-share
+group 5
+</code></pre><h4 id="san-2">SAN</h4>
+<pre tabindex="0"><code>crypto isakmp policy 10
+encryption aes 256
+authentication pre-share
+group 5
+</code></pre><h3 id="5-configure-psk-pre-shared-key">5. Configure PSK (Pre-shared Key)</h3>
+<h4 id="vil-3">VIL</h4>
+<pre tabindex="0"><code>crypto isakmp key cisco address 20.0.0.6
+</code></pre><h4 id="san-3">SAN</h4>
+<pre tabindex="0"><code>crypto isakmp key cisco address 20.0.0.1
+</code></pre><h3 id="6-define-transform-set">6. Define <code>transform-set</code></h3>
+<h4 id="vil--san">VIL &amp; SAN</h4>
+<pre tabindex="0"><code>crypto ipsec transform-set VPN-TS esp-aes 256 esp-sha-hmac
+</code></pre><h3 id="7-configure-crypto-map">7. Configure <code>crypto map</code></h3>
+<h4 id="vil-4">VIL</h4>
+<pre tabindex="0"><code>crypto map VPN-CM 10 ipsec-isakmp
+set peer 20.0.0.6
+set pfs group5
+set transform-set VPN-TS
+match address VPN_ACL
+</code></pre><h4 id="san-4">SAN</h4>
+<pre tabindex="0"><code>crypto map VPN-CM 10 ipsec-isakmp
+set peer 20.0.0.1
+set pfs group5
+set transform-set VPN-TS
+match address VPN_ACL
+</code></pre><h3 id="8-apply-crypto-map-to-the-interfaces">8. Apply <code>crypto map</code> to the Interfaces</h3>
+<h4 id="vil-5">VIL</h4>
+<pre tabindex="0"><code>interface Serial 0/3/0
+crypto map VPN-CM
+</code></pre><h4 id="san-5">SAN</h4>
+<pre tabindex="0"><code>interface Serial 0/3/0
+crypto map VPN-CM
+</code></pre><h3 id="9-verifying-functionality">9. Verifying functionality</h3>
+<p>By pinging from PCV (192.168.1.10) to PCS (20.0.2.10), we can verify that there <strong>is</strong> connectivity between the two devices.</p>
+<p><img src="/posts/ping-20250410.png" alt="ping-20250410.png"></p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/local-gh0st" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://www.linkedin.com/in/cdangel" target="_blank" rel="noopener noreferrer me"
+    title="Linkedin">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+    <rect x="2" y="9" width="4" height="12"></rect>
+    <circle cx="4" cy="4" r="2"></circle>
+</svg>
+</a>
+<a href="/index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2025 Carlos Angel.
+        
+    </small>
+</footer><a href="#" title="" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+
+
+    
+    <script async src="http://localhost:1313/js/main.js" ></script>
+
+    
+
+</body>
+</html>
