@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>localgh0st&#39;s blog</title>
-    <link>https://local-gh0st.github.io/es/</link>
-    <description>Recent content on localgh0st&#39;s blog</description>
+    <title>lghost256&#39;s blog</title>
+    <link>http://localhost:1313/es/</link>
+    <description>Recent content on lghost256&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://local-gh0st.github.io/es/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/es/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Convierte Linux en un conmutador (switch) de software con NetworkManager</title>
+      <link>http://localhost:1313/es/posts/convierte-linux-en-conmutador-software/</link>
+      <pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/convierte-linux-en-conmutador-software/</guid>
+      
+      <description>&lt;h1 id=&#34;algo-de-contexto&#34;&gt;Algo de contexto&lt;/h1&gt;
+&lt;p&gt;Hace unas semanas, empecé a elaborar un laboratorio en GNS3 para repasar mis habilidades en detección de intrusiones. Instalé Wazuh en un servidor, los agentes en los endpoints, y todo funcionó correctamente. Pero enseguida me di cuenta de que me faltaba una parte clave en mi detección: datos de red. Decidí usar &lt;em&gt;Suricata&lt;/em&gt; para recoger esos datos, pero me topé con un problema: los switches virtuales en GNS3 son útiles para reenviar tramas de nivel 2, pero no cuentan con funciones avanzadas como el port mirroring (que permitiría enviar copias del tráfico a Suricata para monitorizarlo). Sin esta función, tuve que buscar una alternativa para que Suricata pudiera capturar todo el tráfico de mi red.&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Configuracion de VPN IPsec en Cisco IOS</title>
-      <link>https://local-gh0st.github.io/es/posts/configuracion-vpn-ipsec-cisco-ios/</link>
+      <link>http://localhost:1313/es/posts/configuracion-vpn-ipsec-cisco-ios/</link>
       <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://local-gh0st.github.io/es/posts/configuracion-vpn-ipsec-cisco-ios/</guid>
+      <guid>http://localhost:1313/es/posts/configuracion-vpn-ipsec-cisco-ios/</guid>
       
       <description>&lt;p&gt;&lt;em&gt;Nota: debes seguir estos pasos de configuración en ambos extremos del túnel.&lt;/em&gt;&lt;/p&gt;
 &lt;h1 id=&#34;qué-es-ipsec&#34;&gt;¿Qué es IPsec?&lt;/h1&gt;
@@ -26,10 +38,10 @@
     
     <item>
       <title>Configuración NAT en Cisco IOS</title>
-      <link>https://local-gh0st.github.io/es/posts/configuracion-nat-cisco-ios/</link>
+      <link>http://localhost:1313/es/posts/configuracion-nat-cisco-ios/</link>
       <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://local-gh0st.github.io/es/posts/configuracion-nat-cisco-ios/</guid>
+      <guid>http://localhost:1313/es/posts/configuracion-nat-cisco-ios/</guid>
       
       <description>&lt;h1 id=&#34;nat-dinámico-con-sobrecarga-pat&#34;&gt;NAT Dinámico con Sobrecarga (PAT)&lt;/h1&gt;
 &lt;h2 id=&#34;qué-es&#34;&gt;¿Qué es?&lt;/h2&gt;
@@ -39,10 +51,10 @@
     
     <item>
       <title>Sobre mi</title>
-      <link>https://local-gh0st.github.io/es/pages/about/</link>
+      <link>http://localhost:1313/es/pages/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://local-gh0st.github.io/es/pages/about/</guid>
+      <guid>http://localhost:1313/es/pages/about/</guid>
       
       <description>&lt;p&gt;Hola, me llamo Carlos. Bienvenido a mi blog 👋&lt;/p&gt;
 &lt;p&gt;Soy una persona apasionada por la tecnología. Este blog es un reflejo de esa pasión. Muchas veces, cuando estoy implementando cosas en mi laboratorio o  consigo solucionar algo de una manera interesante, siempre pienso:&lt;/p&gt;

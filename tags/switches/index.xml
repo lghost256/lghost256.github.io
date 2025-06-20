@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Switches on lghost256&#39;s blog</title>
+    <link>http://localhost:1313/tags/switches/</link>
+    <description>Recent content in Switches on lghost256&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 19 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/switches/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Turn Linux into a Software Switch with NetworkManager</title>
+      <link>http://localhost:1313/posts/turn-linux-into-a-software-switch-networkmanager/</link>
+      <pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/turn-linux-into-a-software-switch-networkmanager/</guid>
+      
+      <description>&lt;h1 id=&#34;some-context&#34;&gt;Some context&lt;/h1&gt;
+&lt;p&gt;A few weeks ago, I started building a lab in GNS3 to brush up on my intrusion detection skills. I installed Wazuh in my lab and its agent software on my endpoints and everything worked well. However, I quickly realized that I was missing an important part in my detection: network data. I decided I would use &lt;em&gt;Suricata&lt;/em&gt; to gather this data, but ran into a small problem: virtual switches in GNS3 are helpful for forwarding L2 packets, but they lack advanced features such as port mirroring (which would allow me to send copies of packets to Suricata for monitoring). Without this function, I had to find an alternative solution so Suricata could sniff all the traffic on my network.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

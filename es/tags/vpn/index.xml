@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Vpn on localgh0st&#39;s blog</title>
-    <link>https://local-gh0st.github.io/es/tags/vpn/</link>
-    <description>Recent content in Vpn on localgh0st&#39;s blog</description>
+    <title>Vpn on lghost256&#39;s blog</title>
+    <link>http://localhost:1313/es/tags/vpn/</link>
+    <description>Recent content in Vpn on lghost256&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://local-gh0st.github.io/es/tags/vpn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/es/tags/vpn/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Configuracion de VPN IPsec en Cisco IOS</title>
-      <link>https://local-gh0st.github.io/es/posts/configuracion-vpn-ipsec-cisco-ios/</link>
+      <link>http://localhost:1313/es/posts/configuracion-vpn-ipsec-cisco-ios/</link>
       <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://local-gh0st.github.io/es/posts/configuracion-vpn-ipsec-cisco-ios/</guid>
+      <guid>http://localhost:1313/es/posts/configuracion-vpn-ipsec-cisco-ios/</guid>
       
       <description>&lt;p&gt;&lt;em&gt;Nota: debes seguir estos pasos de configuración en ambos extremos del túnel.&lt;/em&gt;&lt;/p&gt;
 &lt;h1 id=&#34;qué-es-ipsec&#34;&gt;¿Qué es IPsec?&lt;/h1&gt;

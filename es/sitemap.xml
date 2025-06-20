@@ -2,124 +2,153 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://local-gh0st.github.io/es/tags/cisco/</loc>
-    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/es/posts/convierte-linux-en-conmutador-software/</loc>
+    <lastmod>2025-06-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/</loc>
+    <lastmod>2025-06-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://local-gh0st.github.io/tags/cisco/"
+                href="http://localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://local-gh0st.github.io/es/tags/cisco/"
+                href="http://localhost:1313/es/"
                 />
   </url><url>
-    <loc>https://local-gh0st.github.io/es/posts/configuracion-vpn-ipsec-cisco-ios/</loc>
-    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://local-gh0st.github.io/es/</loc>
-    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/es/tags/linux/</loc>
+    <lastmod>2025-06-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://local-gh0st.github.io/"
+                href="http://localhost:1313/tags/linux/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://local-gh0st.github.io/es/"
+                href="http://localhost:1313/es/tags/linux/"
                 />
   </url><url>
-    <loc>https://local-gh0st.github.io/es/posts/</loc>
-    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/es/posts/</loc>
+    <lastmod>2025-06-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://local-gh0st.github.io/posts/"
+                href="http://localhost:1313/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://local-gh0st.github.io/es/posts/"
+                href="http://localhost:1313/es/posts/"
                 />
   </url><url>
-    <loc>https://local-gh0st.github.io/es/tags/</loc>
-    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/es/tags/switches/</loc>
+    <lastmod>2025-06-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://local-gh0st.github.io/tags/"
+                href="http://localhost:1313/tags/switches/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://local-gh0st.github.io/es/tags/"
+                href="http://localhost:1313/es/tags/switches/"
                 />
   </url><url>
-    <loc>https://local-gh0st.github.io/es/tags/vpn/</loc>
-    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/es/tags/</loc>
+    <lastmod>2025-06-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://local-gh0st.github.io/tags/vpn/"
+                href="http://localhost:1313/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://local-gh0st.github.io/es/tags/vpn/"
+                href="http://localhost:1313/es/tags/"
                 />
   </url><url>
-    <loc>https://local-gh0st.github.io/es/posts/configuracion-nat-cisco-ios/</loc>
+    <loc>http://localhost:1313/es/tags/cisco/</loc>
+    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/tags/cisco/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/tags/cisco/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/es/posts/configuracion-vpn-ipsec-cisco-ios/</loc>
+    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/tags/vpn/</loc>
+    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/tags/vpn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/tags/vpn/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/es/posts/configuracion-nat-cisco-ios/</loc>
     <lastmod>2025-04-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://local-gh0st.github.io/es/tags/nat/</loc>
+    <loc>http://localhost:1313/es/tags/nat/</loc>
     <lastmod>2025-04-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://local-gh0st.github.io/tags/nat/"
+                href="http://localhost:1313/tags/nat/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://local-gh0st.github.io/es/tags/nat/"
+                href="http://localhost:1313/es/tags/nat/"
                 />
   </url><url>
-    <loc>https://local-gh0st.github.io/es/categories/</loc>
+    <loc>http://localhost:1313/es/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://local-gh0st.github.io/categories/"
+                href="http://localhost:1313/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://local-gh0st.github.io/es/categories/"
+                href="http://localhost:1313/es/categories/"
                 />
   </url><url>
-    <loc>https://local-gh0st.github.io/es/pages/</loc>
+    <loc>http://localhost:1313/es/pages/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://local-gh0st.github.io/pages/"
+                href="http://localhost:1313/pages/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://local-gh0st.github.io/es/pages/"
+                href="http://localhost:1313/es/pages/"
                 />
   </url><url>
-    <loc>https://local-gh0st.github.io/es/pages/about/</loc>
+    <loc>http://localhost:1313/es/pages/about/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://local-gh0st.github.io/pages/about/"
+                href="http://localhost:1313/pages/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://local-gh0st.github.io/es/pages/about/"
+                href="http://localhost:1313/es/pages/about/"
                 />
   </url>
 </urlset>
