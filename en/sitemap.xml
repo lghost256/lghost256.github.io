@@ -2,153 +2,153 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://lghost256.github.io/</loc>
     <lastmod>2025-06-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/"
+                href="https://lghost256.github.io/es/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/"
+                href="https://lghost256.github.io/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/linux/</loc>
+    <loc>https://lghost256.github.io/tags/linux/</loc>
     <lastmod>2025-06-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/tags/linux/"
+                href="https://lghost256.github.io/es/tags/linux/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/linux/"
+                href="https://lghost256.github.io/tags/linux/"
                 />
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://lghost256.github.io/posts/</loc>
     <lastmod>2025-06-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/posts/"
+                href="https://lghost256.github.io/es/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/posts/"
+                href="https://lghost256.github.io/posts/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/switches/</loc>
+    <loc>https://lghost256.github.io/tags/switches/</loc>
     <lastmod>2025-06-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/tags/switches/"
+                href="https://lghost256.github.io/es/tags/switches/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/switches/"
+                href="https://lghost256.github.io/tags/switches/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://lghost256.github.io/tags/</loc>
     <lastmod>2025-06-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/tags/"
+                href="https://lghost256.github.io/es/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/"
+                href="https://lghost256.github.io/tags/"
                 />
   </url><url>
-    <loc>http://localhost:1313/posts/turn-linux-into-a-software-switch-networkmanager/</loc>
+    <loc>https://lghost256.github.io/posts/turn-linux-into-a-software-switch-networkmanager/</loc>
     <lastmod>2025-06-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cisco/</loc>
+    <loc>https://lghost256.github.io/tags/cisco/</loc>
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/tags/cisco/"
+                href="https://lghost256.github.io/es/tags/cisco/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/cisco/"
+                href="https://lghost256.github.io/tags/cisco/"
                 />
   </url><url>
-    <loc>http://localhost:1313/posts/ipsec-vpn-configuration-on-cisco-ios/</loc>
+    <loc>https://lghost256.github.io/posts/ipsec-vpn-configuration-on-cisco-ios/</loc>
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/vpn/</loc>
+    <loc>https://lghost256.github.io/tags/vpn/</loc>
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/tags/vpn/"
+                href="https://lghost256.github.io/es/tags/vpn/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/vpn/"
+                href="https://lghost256.github.io/tags/vpn/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/nat/</loc>
+    <loc>https://lghost256.github.io/tags/nat/</loc>
     <lastmod>2025-04-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/tags/nat/"
+                href="https://lghost256.github.io/es/tags/nat/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/nat/"
+                href="https://lghost256.github.io/tags/nat/"
                 />
   </url><url>
-    <loc>http://localhost:1313/posts/nat-configuration-cisco-ios/</loc>
+    <loc>https://lghost256.github.io/posts/nat-configuration-cisco-ios/</loc>
     <lastmod>2025-04-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pages/about/</loc>
+    <loc>https://lghost256.github.io/pages/about/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/pages/about/"
+                href="https://lghost256.github.io/es/pages/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/pages/about/"
+                href="https://lghost256.github.io/pages/about/"
                 />
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://lghost256.github.io/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/categories/"
+                href="https://lghost256.github.io/es/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/categories/"
+                href="https://lghost256.github.io/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/pages/</loc>
+    <loc>https://lghost256.github.io/pages/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/pages/"
+                href="https://lghost256.github.io/es/pages/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/pages/"
+                href="https://lghost256.github.io/pages/"
                 />
   </url>
 </urlset>

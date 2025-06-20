@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on lghost256&#39;s blog</title>
-    <link>http://localhost:1313/es/pages/</link>
+    <link>https://lghost256.github.io/es/pages/</link>
     <description>Recent content in Pages on lghost256&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>es</language><atom:link href="http://localhost:1313/es/pages/index.xml" rel="self" type="application/rss+xml" />
+    <language>es</language><atom:link href="https://lghost256.github.io/es/pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sobre mi</title>
-      <link>http://localhost:1313/es/pages/about/</link>
+      <link>https://lghost256.github.io/es/pages/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/es/pages/about/</guid>
+      <guid>https://lghost256.github.io/es/pages/about/</guid>
       
       <description>&lt;p&gt;Hola, me llamo Carlos. Bienvenido a mi blog 👋&lt;/p&gt;
 &lt;p&gt;Soy una persona apasionada por la tecnología. Este blog es un reflejo de esa pasión. Muchas veces, cuando estoy implementando cosas en mi laboratorio o  consigo solucionar algo de una manera interesante, siempre pienso:&lt;/p&gt;

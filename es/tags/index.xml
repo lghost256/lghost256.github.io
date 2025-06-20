@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on lghost256&#39;s blog</title>
-    <link>http://localhost:1313/es/tags/</link>
+    <link>https://lghost256.github.io/es/tags/</link>
     <description>Recent content in Tags on lghost256&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Thu, 19 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/es/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://lghost256.github.io/es/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux</title>
-      <link>http://localhost:1313/es/tags/linux/</link>
+      <link>https://lghost256.github.io/es/tags/linux/</link>
       <pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/es/tags/linux/</guid>
+      <guid>https://lghost256.github.io/es/tags/linux/</guid>
       
       <description></description>
       
@@ -20,10 +20,10 @@
     
     <item>
       <title>Switches</title>
-      <link>http://localhost:1313/es/tags/switches/</link>
+      <link>https://lghost256.github.io/es/tags/switches/</link>
       <pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/es/tags/switches/</guid>
+      <guid>https://lghost256.github.io/es/tags/switches/</guid>
       
       <description></description>
       
@@ -31,10 +31,10 @@
     
     <item>
       <title>Cisco</title>
-      <link>http://localhost:1313/es/tags/cisco/</link>
+      <link>https://lghost256.github.io/es/tags/cisco/</link>
       <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/es/tags/cisco/</guid>
+      <guid>https://lghost256.github.io/es/tags/cisco/</guid>
       
       <description></description>
       
@@ -42,10 +42,10 @@
     
     <item>
       <title>Vpn</title>
-      <link>http://localhost:1313/es/tags/vpn/</link>
+      <link>https://lghost256.github.io/es/tags/vpn/</link>
       <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/es/tags/vpn/</guid>
+      <guid>https://lghost256.github.io/es/tags/vpn/</guid>
       
       <description></description>
       
@@ -53,10 +53,10 @@
     
     <item>
       <title>Nat</title>
-      <link>http://localhost:1313/es/tags/nat/</link>
+      <link>https://lghost256.github.io/es/tags/nat/</link>
       <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/es/tags/nat/</guid>
+      <guid>https://lghost256.github.io/es/tags/nat/</guid>
       
       <description></description>
       
